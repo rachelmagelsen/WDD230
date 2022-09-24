@@ -44,14 +44,14 @@ img {
     margin-left: 10px;
 }
 .topshape {
-    grid-column: 1/10;
+    grid-column: 1/11;
     grid-row: 1/3;
     border-radius: 10px;
     background-color:rgb(33, 46, 87);
     z-index: -1;
 }
 .footershape {
-    grid-column: 1/10;
+    grid-column: 1/11;
     grid-row: 8;
     border-radius: 10px;
     background-color:rgb(33, 46, 87);
