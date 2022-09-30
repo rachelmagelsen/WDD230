@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+h1, h2 {
+    font-family: "Josefin Sans", sans-serif;
+}
+h1 {
+    color: white;
+    background-color: #102812;
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
