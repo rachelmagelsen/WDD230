@@ -81,3 +81,16 @@ h4 {
     color: black;
     padding: 15px;
 }
+.type01 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 110%;
+    margin-top: 10px;
+    background-color: rgb(234, 234, 234);
+}
+.type02 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(234, 234, 234);
+}
