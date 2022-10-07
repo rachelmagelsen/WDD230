@@ -3,21 +3,43 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
+
+
+
+
 .navigation {
 	list-style: none;
 	padding: 0;
     margin: 0;
 }
+nav {background-color: #eee;}
 nav button {
     background: transparent;
     border: none;
     font-size: 2rem;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.responsive li {
+	display: block;
 }
 nav ul li a {
     display: block;
     padding: .8rem;
     text-decoration: none;
     color: #333;
+}
+nav ul li a:hover {
+    background-color: teal;
 }
 img {
     width: 5rem;
