@@ -22,8 +22,8 @@ header {
     font-family: "Josefin Sans", sans-serif;
     display: flex;
 	flex-direction: column;
-    margin-left: 1rem;
     color: white;
+    margin-left: 1rem;
 }
 .subhead {
 	font-size: 0.8rem;
@@ -69,6 +69,7 @@ nav ul li a:hover {
 .date {
     font-family: Arial;
     background-color: gray;
+    color: white;
     padding: 10px;
     text-align: center;
 
@@ -95,4 +96,9 @@ footer {
     font-size: .8rem;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+.logosmall {
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px;
 }
