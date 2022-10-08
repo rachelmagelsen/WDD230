@@ -9,14 +9,12 @@ header {
     margin: 0 auto;
     background-color: #102812;
     color: white;
-    display: grid;
-    grid-template-rows: 5rem 5rem 5rem;
 }
 .logo {
 	display: flex;
+    flex-direction: column;
 	align-items: center;
-	margin-left: 3rem;
-    margin-top: 6rem;
+	margin-left: 1rem;
     width: 60px;
 	height: auto;
 }
@@ -24,15 +22,16 @@ header {
     font-family: "Josefin Sans", sans-serif;
     display: flex;
 	flex-direction: column;
-	margin-left: 7rem;
+    margin-left: 1rem;
     color: white;
 }
 .subhead {
 	font-size: 0.8rem;
-    margin-top: none;
+    margin-top: 0;
 }
 .socials {
     justify-items: right;
+    margin-right: 1rem;
 }
 .navigation {
 	list-style: none;
@@ -61,14 +60,18 @@ nav ul li a {
     display: block;
     padding: .8rem;
     text-decoration: none;
-    color: #333;
+    color: white;
     text-align: center;
 }
 nav ul li a:hover {
-    background-color: teal;
+    background-color: #53ad7e;
 }
 .date {
     font-family: Arial;
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+
 }
 .socials {
 	margin-right: 1.5rem;
