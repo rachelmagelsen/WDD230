@@ -30,7 +30,7 @@ header {
     margin-top: 0;
 }
 .socials {
-    justify-items: right;
+    justify-content: right;
     margin-right: 1rem;
 }
 .navigation {
@@ -40,12 +40,14 @@ header {
     font-family: Arial;
     color: white;
     text-align: right;
+    order: 2;
 }
 nav button {
     background: transparent;
     border: none;
     font-size: 2rem;
     color: white;
+    order: 2;
 }
 .navigation li:first-child {
 	display: block;
