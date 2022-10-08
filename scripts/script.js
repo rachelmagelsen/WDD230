@@ -1,11 +1,11 @@
-const date = document.querySelector("#date");
+const date = document.querySelector("#lastModified");
 try {
 	const options = {
 		day: "numeric",
 		month: "numeric",
 		year: "numeric"
 	};
-	date.innerHTML = ` Last updated: <span>${new Date().toLocaleDateString("en-US", options)}</span>`;
+	date.innerHTML = `Last updated: <span>${new Date().toLocaleDateString("en-US", options)}</span>`;
 } catch (e) {
 	alert("Error with code or your browser does not support Locale");
 }

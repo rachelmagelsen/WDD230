@@ -6,12 +6,19 @@ const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 	now
 );
-const fulldateUK = new Intl.DateTimeFormat("en-UK", {
-	dateStyle: "full"
-}).format(now);
-// long, medium, short options ... try them
-
 datefield.innerHTML = `${fulldate}`;
+
+const date = document.querySelector("#lastModified");
+try {
+	const options = {
+		day: "numeric",
+		month: "numeric",
+		year: "numeric"
+	};
+	date.innerHTML = ` &copy2022 Concrete Chamber | Rachel Magelsen | WDD 230 Project | Last updated: <span>${new Date().toLocaleDateString("en-US", options)}</span>`;
+} catch (e) {
+	alert("Error with code or your browser does not support Locale");
+}
 
 const hambutton = document.querySelector('.btn');
 const mainnav = document.querySelector('.navigation')
