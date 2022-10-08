@@ -7,14 +7,16 @@ header {
     display: flex;
     margin: 0;
 }
-h1 {
+.heading {
     font-family: "Josefin Sans", sans-serif;
-    margin-left: 3rem;
+    display: flex;
+	flex-direction: column;
+	margin-left: .5rem;
 }
 .subhead {
-    font-size: 1rem;
-    display: flex;
-    flex-direction: rows;
+    letter-spacing: 1pt;
+	font-weight: 700;
+	font-size: 0.8rem;
 }
 .socials {
     justify-items: right;
