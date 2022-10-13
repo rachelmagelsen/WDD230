@@ -15,7 +15,7 @@ try {
 		month: "numeric",
 		year: "numeric"
 	};
-	date.innerHTML = ` &copy2022 Concrete Chamber | Rachel Magelsen | WDD 230 Project | Last updated: <span>${new Date().toLocaleDateString("en-US", options)}</span>`;
+	date.innerHTML = `Last updated: <span>${new Date().toLocaleDateString("en-US", options)}</span>`;
 } catch (e) {
 	alert("Error with code or your browser does not support Locale");
 }

@@ -74,7 +74,7 @@ nav ul li a:hover {
     color: white;
     padding: 10px;
     text-align: center;
-
+    float: bottom;
 }
 .socials {
 	margin-right: 1.5rem;
@@ -98,6 +98,10 @@ footer {
     font-size: .8rem;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+footer a {
+    color: white;
+    padding-bottom: .8rem;
 }
 .logosmall {
     width: 40px;
