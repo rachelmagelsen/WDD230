@@ -3,20 +3,26 @@ body {
 	padding: 0;
 	margin: 0;
 }
+h2, h3 {
+    font-family: "Josefin Sans", sans-serif;
+}
+p {
+    font-family: Arial;
+}
 header {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
     margin: 0 auto;
     background-color: #102812;
     color: white;
 }
 .logo {
-	display: flex;
-    flex-direction: column;
-	align-items: center;
-	margin-left: 1rem;
-    width: 60px;
-	height: auto;
+	max-width: 60px;
+    margin: 0;
+    padding: 0;
+    grid-column: 1;
+    grid-row: 1/2;
 }
 .heading {
     font-family: "Josefin Sans", sans-serif;
@@ -29,18 +35,38 @@ header {
 	font-size: 0.8rem;
     margin-top: 0;
 }
-.socials {
-    justify-content: right;
-    margin-right: 1rem;
+.social1 img, .social2 img {
+    width: 25px;
+}
+.social1 {
+    grid-column: 4;
+    grid-row: 1;
+    margin-top: 10px;
+}
+.social2 {
+    grid-column: 5;
+    grid-row: 1;
+    margin-top: 10px;
+}
+.date {
+    font-family: "Josefin Sans", sans-serif;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    grid-column: 1/7;
+    grid-row: 3;
+    background-color: #BCE3ff;
+    padding: .5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
 }
 .navigation {
 	list-style: none;
 	padding: 0;
-    margin: 0;
+    margin: 3rem;
     font-family: Arial;
     color: white;
     text-align: right;
-    order: 2;
 }
 nav button {
     background: transparent;
@@ -68,26 +94,65 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #53ad7e;
 }
-.date {
-    font-family: Arial;
-    background-color: gray;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    float: bottom;
+.hero-box, .event-box, .weather-box, .news-box {
+    padding: 0;
+    border: 1px solid #CCC;
+    margin: .5rem;
 }
-.socials {
-	margin-right: 1.5rem;
+.weather-box {
+    width: 80%;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-
-.socials img {
-	width: 25px;
-	height: auto;
+.hero-box {
+    position: relative;
 }
-.hero {
-    height: 100px;
-    margin: 50px;
-    background-color: gray;
+main img {
+    width: 95%;
+    margin: 2.5%;
+}
+.hero-box h2 {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+.hero-box button {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 4rem;
+    background-color:#F5841B;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.spotlight-box {
+    padding: 1rem;
+    border: 1px solid #CCC;
+    margin: .5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.spot1, .spot2 {
+    margin: 0;
+    border: 1px solid #CCC;
+    max-width: 95%;
+}
+.spot1 {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+.spot2 {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+main .join-box, .spot3 {
+    display: none;
 }
 footer {
     font-family: 'Josefin Sans', sans-serif;
