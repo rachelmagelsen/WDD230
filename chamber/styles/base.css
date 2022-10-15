@@ -3,6 +3,12 @@ body {
 	padding: 0;
 	margin: 0;
 }
+.banner {
+    background-color: #53ad7e;
+    font-family: "Josefin Sans";
+    padding: 1rem;
+    border-radius: 5px;
+}
 h2, h3 {
     font-family: "Josefin Sans", sans-serif;
 }
@@ -52,10 +58,8 @@ header {
     text-align: center;
     grid-column: 1/7;
     grid-row: 3;
-    background-color: #BCE3ff;
-    padding: .5rem;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    background-color: #53ad7e;
+    padding: 1rem;
 }
 .navigation {
 	list-style: none;
@@ -90,7 +94,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #53ad7e;
 }
-.hero, .event, .news, .spot1, .spot2, .spot3 {
+.hero, .event, .news, .theater, .chs, .hike, .join {
     padding: 10px;
     margin: .5rem;
     background-color: #BCE3ff;
@@ -125,15 +129,7 @@ nav ul li a:hover {
     background-color: #BCE3ff;
     color: black;
 }
-.spot1 {
-    grid-column: 1/2;
-    grid-row: 1;
-}
-.spot2 {
-    grid-column: 1/2;
-    grid-row: 2;
-}
-.side-img {
+main img {
     max-width: 25rem;
     height: auto;
     align-items: center;
