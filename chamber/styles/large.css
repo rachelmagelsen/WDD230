@@ -1,33 +1,27 @@
 @media only screen and (min-width: 40rem) {
-	.btn {
-		display: none;
+	body {
+		padding: 0;
+		margin: 0;
 	}
-	.navigation {
-		display: flex;
+	h2, h3 {
+		font-family: "Josefin Sans", sans-serif;
+	}
+	p {
+		font-family: Arial;
+	}
+	header {
+		display: grid;
+		margin: 0 auto;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 		background-color: #102812;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation a hover {
-		text-align: center;
-		background-color: #53ad7e;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
-	.socials {
-		justify-content: end;
-		margin-right: 1rem;
+		color: white;
 	}
 	.logo {
-		width: 100px;
-		height: auto;
-		padding: 1rem;
+		max-width: 60px;
+		margin: 0;
+		padding: 0;
+		grid-column: 1;
+		grid-row: 1/2;
 	}
 	.heading {
 		font-family: "Josefin Sans", sans-serif;
@@ -35,12 +29,144 @@
 		margin-left: 1rem;
 	}
 	.subhead {
-		font-size: 1rem;
+		font-size: 0.8rem;
 		margin-top: 0;
 	}
-	.title {
+	.social1 img, .social2 img {
+		width: 25px;
+	}
+	.social1 {
+		grid-column: 5;
+		grid-row: 1;
+		margin-top: 10px;
+	}
+	.social2 {
+		grid-column: 6;
+		grid-row: 1;
+		margin-top: 10px;
+	}
+	.date {
+		font-family: "Josefin Sans", sans-serif;
+		text-align: center;
+		color: black;
+		text-align: center;
+		grid-column: 1/7;
+		grid-row: 3;
+		background-color: #BCE3ff;
+		padding: .5rem;
+		padding-left: 3.5rem;
+		padding-right: 3.5rem;
+	}
+	.navigation {
+		list-style: none;
+		padding: 0;
+		margin: 3rem;
+		font-family: Arial;
+		color: white;
+		text-align: right;
+	}
+	nav button {
+		background: transparent;
+		border: none;
 		font-size: 2rem;
-		grid-column: 3/5;
+		color: white;
+	}
+	.navigation li:first-child {
+		display: block;
+	}
+	.navigation li {
+		display: none;
+	}
+	.responsive li {
+		display: block;
+	}
+	nav ul li a {
+		display: block;
+		padding: .8rem;
+		text-decoration: none;
+		color: white;
+		text-align: center;
+	}
+	nav ul li a:hover {
+		background-color: #53ad7e;
+	}
+	.hero, .event, .news, .spot1, .spot2, .spot3 {
+		padding: 10px;
+		margin: .5rem;
+		background-color: #BCE3ff;
+		border-radius: 5px;
+		text-align: center;
+	}
+	.weather {
+		width: 80%;
+		align-content: center;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.hero {
+		position: relative;
+	}
+	.hero img {
+		max-width: 25rem;
+		max-height: auto;
+	}
+	.hero button {
+		position: absolute;
+		bottom: 1.5rem;
+		left: 9rem;
+		background-color:#102812;
+		color: white;
+		text-decoration: none;
+		border-radius: 5px;
+		padding: 1rem;
+		font-size: 1rem;
+	}
+	.hero button:hover {
+		background-color: #BCE3ff;
+		color: black;
+	}
+	.spot1 {
+		grid-column: 1/2;
+		grid-row: 1;
+	}
+	.spot2 {
+		grid-column: 1/2;
+		grid-row: 2;
+	}
+	.side-img {
+		max-width: 25rem;
+		height: auto;
+		align-items: center;
+	}
+	.join button {
+		background-color:#102812;
+		color: white;
+		text-decoration: none;
+		border-radius: 5px;
+		padding: 1rem;
+		font-size: 1rem;
+	}
+	.join button:hover {
+		background-color: #53ad7e;
+	}
+	footer {
+		font-family: 'Josefin Sans', sans-serif;
+		background-color: #244266;
+		color: white;
+		text-align: center;
+		padding: 15px;
+		font-size: .8rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	footer a {
+		color: white;
+		padding-bottom: .8rem;
+	}
+	.logosmall {
+		width: 40px;
+		height: auto;
+		margin-bottom: 10px;
 	}
 	.main-grid {
 		display: grid;
