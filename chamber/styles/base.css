@@ -108,28 +108,28 @@ nav ul li a:hover {
 .hero-box {
     position: relative;
 }
-main img {
-    width: 95%;
-    margin: 2.5%;
+.hero-box img {
+    object-fit: contain;
 }
 .hero-box h2 {
     position: absolute;
     top: 5px;
     left: 15px;
+    color: white;
+    text-align: center;
 }
 .hero-box button {
     position: absolute;
     bottom: 1.5rem;
     left: 4rem;
-    background-color:#F5841B;
-    color: black;
+    background-color:#102812;
+    color: white;
     text-decoration: none;
     border-radius: 20px;
     border: 1px solid black;
     padding: 1rem;
     font-size: 1rem;
     font-weight: bold;
-    opacity: 0.8;
 }
 .spotlight-box {
     padding: 1rem;

@@ -34,7 +34,9 @@
         grid-column: 2/3;
         grid-row: 1/3;
     }
-
+	.hero-box img {
+		object-fit: contain;
+	}
     .hero-box a  {
         text-decoration: none;
     }
