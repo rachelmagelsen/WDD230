@@ -1,5 +1,5 @@
 @media only screen and (min-width: 40rem) {
-	button {
+	.btn {
 		display: none;
 	}
 	.navigation {
@@ -31,8 +31,6 @@
 	}
 	.heading {
 		font-family: "Josefin Sans", sans-serif;
-		display: flex;
-		flex-direction: column;
 		color: white;
 		margin-left: 1rem;
 	}
@@ -42,69 +40,10 @@
 	}
 	.title {
 		font-size: 2rem;
-	}
-	.date {
-		display: flex;
-		float: bottom;
+		grid-column: 3/5;
 	}
 	.main-grid {
 		display: grid;
         grid-template-columns: 20% 60% 20%;
     }
-    .event-box {
-        grid-column: 1;
-        grid-row: 1;
-        padding: 2rem;
-    }
-    .weather-box {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    main .join-box {
-        grid-column: 1;
-        grid-row: 3;
-        padding: 2rem;
-        position: relative;
-    }
-    .hero-box {
-        grid-column: 2/3;
-        grid-row: 1/3;
-    }
-	.hero-box img {
-		position: relative;
-		height: auto;
-		margin: 0;
-		justify-items: center;
-	}
-    .hero-box a  {
-        text-decoration: none;
-    }
-    #joinBtn {
-        position: absolute;
-        top: 70%;
-        height: 3rem;
-    }
-    .news-box {
-        grid-column: 2/3;
-        grid-row: 3;
-        padding: 2rem;
-    }
-    .spotlight-box {
-        grid-column: 3;
-        grid-row: 1/4;
-        display: flex;
-        flex-direction: column;
-
-    }
-    .spot1, .spot2, .spot3 {
-        display: block;
-        width: 300px;
-        padding: 0;
-        border: 1px solid #CCC;
-        margin: .5rem;
-        max-width: 95%;
-    }
-    .spot3 img {
-        max-width: 300px;
-	}
 }
