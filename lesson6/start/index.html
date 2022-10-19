@@ -28,8 +28,12 @@
 </head>
 <body>
 <!-- HEADER HERE -->
-	<header>
- <h1>Company Name Here</h1>
+	<header class="clearfix">
+        <figure class="logo">
+            <img src="./images/logo0.png" alt="logo" 
+            srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
+        </figure>
+        <h1>Company Name Here</h1>
         <h2>Possible Slogan or Tagline</h2>
     </header>
     
@@ -46,12 +50,24 @@
     
     
 <!-- CONTENT HERE -->
-    <main>
+    <main class="clearfix">
         <h1>Products</h1>
         <figure class="myphoto">
-            <img src="./images/gardenTomb.jpg" alt="gardentomb">
+            <img src="./images/golgotha.jpg" alt="gardentomb" sizes="50vw"
+            srcset="images/golgotha200.jpg 200w,
+                    images/golgotha500.jpg 500w,
+                    images/golgotha800.jpg 800w,
+                    images/golgotha1100.jpg 1100w">
         </figure>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus tincidunt, feugiat mauris non, hendrerit leo. Mauris urna magna, efficitur at tortor vitae, maximus auctor leo. Phasellus orci massa, sollicitudin at scelerisque quis, facilisis vel felis. Cras ipsum nibh, scelerisque id enim at, molestie maximus urna. Donec ut augue metus. Etiam ullamcorper quis orci sollicitudin imperdiet. Aenean ultrices lorem sed egestas aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam gravida mauris facilisis ligula dapibus, vitae elementum ligula bibendum. Proin vel imperdiet augue, at mollis dui. In eget dictum ligula, at dictum tortor. Vivamus et lectus iaculis, euismod turpis ut, rhoncus mi. Vestibulum feugiat nisi ornare lorem pellentesque ultrices. Integer blandit, tellus a semper condimentum, lectus nisi viverra lorem, ac efficitur mauris velit eu leo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at risus tincidunt, 
+            feugiat mauris non, hendrerit leo. Mauris urna magna, efficitur at tortor vitae, maximus auctor leo. 
+            Phasellus orci massa, sollicitudin at scelerisque quis, facilisis vel felis. Cras ipsum nibh, scelerisque 
+            id enim at, molestie maximus urna. Donec ut augue metus. Etiam ullamcorper quis orci sollicitudin imperdiet. 
+            Aenean ultrices lorem sed egestas aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+            per inceptos himenaeos. Aliquam gravida mauris facilisis ligula dapibus, vitae elementum ligula bibendum. 
+            Proin vel imperdiet augue, at mollis dui. In eget dictum ligula, at dictum tortor. Vivamus et lectus iaculis, 
+            euismod turpis ut, rhoncus mi. Vestibulum feugiat nisi ornare lorem pellentesque ultrices. Integer blandit, 
+            tellus a semper condimentum, lectus nisi viverra lorem, ac efficitur mauris velit eu leo.</p>
     </main>
     
 <!-- FOOTER HERE -->   
