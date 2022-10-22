@@ -50,11 +50,12 @@
         <p>Join us for the grand opening of the Diamond Shack</p>
         <p><a href="#">more info</a></p>
       </div>
-      <div class="weather">
-          <a class="weatherwidget-io" href="https://forecast7.com/en/48d54n121d75/concrete/" data-label_1="CONCRETE" data-label_2="WEATHER" data-theme="original" >CONCRETE WEATHER</a>
-          <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-          </script>
+      <div class="weather" id="weather">
+        <h2>Weather</h2>
+        <p class="weather"><span class="weather" id="temp">40</span>°F</p>
+        <p id="weatherType">Cloudy</p>
+        <p class="wind">Wind Speed: <span id="speed">7</span> mi/h</p>
+        <p class="wind">Wind Chill: <span id="windchill"></span></p>
       </div>
       <div class="join">
         <a href="#">
