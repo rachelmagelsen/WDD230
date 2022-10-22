@@ -39,10 +39,12 @@
       <div class="hero">
         <h2>WELCOME TO CONCRETE</h2>
         <picture>
-          <img src="./images/original.jpg" alt="concrete"
-            srcset="images/small.jpg 1x, images/medium.jpg 2x, images/large.jpg 3x">
-          <a href="#"><button id="joinBtn">Join the Chamber</button></a>
+          <source media="(max-width: 500px)" srcset="./images/small.jpg">
+          <source media="(max-width: 800px)" srcset="./images/medium.jpg">
+          <source media="(max-width: 1200px)" srcset="./images/large.jpg">
+          <img src="./images/original.jpg" alt="week6">
         </picture>
+        <a href="#"><button id="joinBtn">Join the Chamber</button></a>
       </div>
       <div class="event">
         <h2>Ribbon Cutting</h2>
