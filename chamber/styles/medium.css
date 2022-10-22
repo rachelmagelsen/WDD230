@@ -1,14 +1,4 @@
-@media only screen and (min-width: 30rem) {
-	body {
-        padding: 0;
-        margin: 0;
-    }
-    h2, h3 {
-        font-family: "Josefin Sans", sans-serif;
-    }
-    p {
-        font-family: Arial;
-    }
+@media only screen and (min-width: 32.5rem) {
     header {
         display: grid;
         margin: 0 auto;
@@ -17,95 +7,59 @@
         color: white;
     }
     .logo {
-        max-width: 60px;
-        margin: 0;
-        padding: 0;
-        grid-column: 1;
+        max-width: 100px;
+        margin-top: 10px;
+        margin-left: 100px;
+        grid-column: 2;
         grid-row: 1/2;
     }
     .heading {
         font-family: "Josefin Sans", sans-serif;
         color: white;
-        margin-left: 1rem;
+    }
+    header h1 {
+        grid-column: 3/8;
     }
     .subhead {
         font-size: 0.8rem;
         margin-top: 0;
     }
     .social1 img, .social2 img {
-        width: 25px;
+        width: 40px;
+        margin-top: 30px;
     }
     .social1 {
-        grid-column: 5;
-        grid-row: 1;
-        margin-top: 10px;
-    }
-    .social2 {
         grid-column: 6;
         grid-row: 1;
-        margin-top: 10px;
     }
-    .navigation {
-        list-style: none;
-        padding: 0;
-        margin: 3rem;
-        font-family: Arial;
-        color: white;
-        text-align: right;
+    .social2 {
+        grid-column: 7;
+        grid-row: 1;
     }
-    nav button {
-        background: transparent;
-        border: none;
-        font-size: 2rem;
-        color: white;
+    .main-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
     }
-    .navigation li:first-child {
-        display: block;
-    }
-    .navigation li {
-        display: none;
-    }
-    .responsive li {
-        display: block;
-    }
-    nav ul li a {
-        display: block;
-        padding: .8rem;
-        text-decoration: none;
-        color: white;
-        text-align: center;
-    }
-    nav ul li a:hover {
-        background-color: #53ad7e;
-    }
-    .hero, .event, .news, .spot1, .spot2, .spot3 {
+    .hero, .event, .news, .theater, .chs, .hike, .join {
         padding: 10px;
         margin: .5rem;
         background-color: #BCE3ff;
         border-radius: 5px;
         text-align: center;
-    }
-    .weather {
-        width: 80%;
-        align-content: center;
-        margin-left: 10%;
-        margin-right: 10%;
+        height: fit-content;
     }
     .hero {
-        position: relative;
+        grid-column: span;
     }
     .hero img {
-        max-width: 25rem;
-        max-height: auto;
+        max-width:100%;
+        height:auto;
     }
     .hero button {
         position: absolute;
-        bottom: 1.5rem;
-        left: 9rem;
-        background-color:#102812;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
+        bottom: 4rem;
+        left: 18rem;
         padding: 1rem;
         font-size: 1rem;
     }
@@ -113,18 +67,21 @@
         background-color: #BCE3ff;
         color: black;
     }
-    .spot1 {
-        grid-column: 1/2;
-        grid-row: 1;
-    }
-    .spot2 {
+    .event {
         grid-column: 1/2;
         grid-row: 2;
     }
-    .side-img {
-        max-width: 25rem;
-        height: auto;
-        align-items: center;
+    .weather {
+        grid-row: 5;
+    }
+    .join {
+        grid-row: 4;
+    }
+    .theater, .chs, .hike {
+        grid-row: 3;
+    }
+    .news {
+        grid-row: 2;
     }
     .join button {
         background-color:#102812;
@@ -136,6 +93,11 @@
     }
     .join button:hover {
         background-color: #53ad7e;
+    }
+    .side-img {
+        max-width: 15rem;
+        height: auto;
+        align-items: center;
     }
     footer {
         font-family: 'Josefin Sans', sans-serif;

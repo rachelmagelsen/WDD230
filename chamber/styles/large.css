@@ -1,4 +1,4 @@
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 40rem) {
 	header {
 		display: grid;
 		margin: 0 auto;
@@ -73,7 +73,7 @@
 	.main-grid {
 		display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-		grid-template-rows: auto;
+		grid-template-rows: 1fr 1f 1fr 1fr 1fr;
     }
 	.hero, .event, .news, .theater, .chs, .hike, .join {
 		padding: 10px;
@@ -160,7 +160,7 @@
 		padding-bottom: .8rem;
 	}
 	.logosmall {
-		width: 40px;
+		width: 60px;
 		height: auto;
 		margin-bottom: 10px;
 	}
