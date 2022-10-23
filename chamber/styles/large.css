@@ -73,7 +73,7 @@
 	.main-grid {
 		display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-		grid-template-rows: 1fr 1f 1fr 1fr 1fr;
+		grid-template-rows: auto;
     }
 	.hero, .event, .news, .theater, .chs, .hike, .join {
 		padding: 10px;

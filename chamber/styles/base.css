@@ -94,18 +94,12 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #53ad7e;
 }
-.hero, .event, .news, .theater, .chs, .hike, .join {
+.hero, .event, .news, .theater, .chs, .hike, .join, .weather {
     padding: 10px;
     margin: .5rem;
     background-color: #BCE3ff;
     border-radius: 5px;
     text-align: center;
-}
-.weather {
-    width: 80%;
-    align-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 .hero {
     position: relative;
