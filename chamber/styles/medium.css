@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5rem) {
+@media only screen and (min-width: 40rem) {
     header {
         display: grid;
         margin: 0 auto;
@@ -9,7 +9,7 @@
     .logo {
         max-width: 100px;
         margin-top: 10px;
-        margin-left: 100px;
+        margin-left: 1rem;
         grid-column: 2;
         grid-row: 1/2;
     }
@@ -37,9 +37,8 @@
         grid-row: 1;
     }
     .main-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
     }
     .hero, .event, .news, .theater, .chs, .hike, .join {
         padding: 10px;
@@ -48,13 +47,16 @@
         border-radius: 5px;
         text-align: center;
         height: fit-content;
+        justify-content: center;
+        flex-direction: column;
     }
     .hero {
         grid-column: span;
+        justify-content: center;
     }
     .hero img {
         max-width:100%;
-        height:auto;
+        height: auto;
     }
     .hero button {
         position: absolute;
@@ -66,22 +68,6 @@
     .hero button:hover {
         background-color: #BCE3ff;
         color: black;
-    }
-    .event {
-        grid-column: 1/2;
-        grid-row: 2;
-    }
-    .weather {
-        grid-row: 5;
-    }
-    .join {
-        grid-row: 4;
-    }
-    .theater, .chs, .hike {
-        grid-row: 3;
-    }
-    .news {
-        grid-row: 2;
     }
     .join button {
         background-color:#102812;
