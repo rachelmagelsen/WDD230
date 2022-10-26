@@ -8,13 +8,45 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>Progressive Loading: Images</h1>
-    <img src="./images/pumpkin1.jpg" alt="pumpkin">
-    <img src="./images/pumpkin2.jpg" alt="pumpkin">
-    <img src="./images/pumpkin3.jpg" alt="pumpkin">
-    <img src="./images/pumpkin4.jpg" alt="pumpkin">
-    <img src="./images/pumpkin5.jpg" alt="pumpkin">
-    <img src="./images/pumpkin6.jpg" alt="pumpkin">
-    <script src="./scripts.js"></script>
+    <main>
+        <h1 class="title">Progressive Loading: Images</h1>
+        <picture class="gallery">
+            <img src="./images/placeholder.png"
+            data-src="./images/pumpkin1.jpg"
+            alt="pumpkin"
+            loading="lazy">
+        </picture>
+        <picture class="gallery">
+            <img src="./images/placeholder.png"
+            data-src="./images/pumpkin2.jpg"
+            alt="pumpkin"
+            loading="lazy">
+        </picture>
+        <picture class="gallery">
+            <img src="./images/placeholder.png"
+            data-src="./images/pumpkin3.jpg"
+            alt="pumpkin"
+            loading="lazy">
+        </picture>
+        <picture class="gallery">
+            <img src="./images/placeholder.png"
+            data-src="./images/pumpkin4.jpg"
+            alt="pumpkin"
+            loading="lazy">
+        </picture>
+        <picture class="gallery">
+            <img src="./images/placeholder.png"
+            data-src="./images/pumpkin5.jpg"
+            alt="pumpkin"
+            loading="lazy">
+        </picture>
+        <picture class="gallery">
+            <img src="./images/placeholder.png"
+            data-src="./images/pumpkin6.jpg"
+            alt="pumpkin"
+            loading="lazy">
+        </picture>
+        <script src="./scripts.js"></script>
+    </main>
 </body>
 </html>
