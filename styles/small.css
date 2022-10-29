@@ -65,7 +65,7 @@ h3 {
     grid-row: 8;
     justify-self: center;
 }
-h4 {
+#currentdate {
     color: white;
     grid-column: 1/10;
     grid-row: 8;
