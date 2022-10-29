@@ -24,7 +24,8 @@
         <nav class="nav">
             <ul class="navigation">
                 <button class="btn">&#9776</button>
-                <li><a href="#">Discover</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li class="active"><a href="./discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
@@ -37,7 +38,52 @@
         <div class="date"></div>
     </header>
     <main>
-        
+        <h1 class="pgtitle">Discover Concrete</h1>
+        <picture class="gallery">
+            <img src="./images/placeholder.png"
+            data-src="./images/concrete.jpeg" alt="concrete"
+            loading="lazy">
+            <p>The Portland Superior Cement Silos, a famous landmark in Concrete.</p>
+        </picture>
+        <picture class="gallery">
+            <img src="./images/placeholder.png"
+            data-src="./images/lake.png" alt="lake"
+            loading="lazy">
+            <p>There are many beautiful natural features surrounding Concrete.</p>
+        </picture>
+        <picture class="gallery">
+            <img src="./images/placeholder.png"
+            data-src="./images/highschool.png" alt="chs"
+            loading="lazy">
+            <p>Even though our town is small, our high school was used for filming "This Boy's Life.</p>
+        </picture>
+        <picture class="gallery">
+            <img src="./images/placeholder.png"
+            data-src="./images/mountain.png" alt="mountains"
+            loading="lazy">
+            <p>Enjoy the mountains by exploring the many hiking trails nearby.</p>
+        </picture>
+        <picture class="gallery">
+            <img src="./images/placeholder.png"
+            data-src="./images/theater.png" alt="theater"
+            loading="lazy">
+            <p>Our theatre is one of our many historic sites, originally built in 1915.</p>
+        </picture>
+        <div class="main-grid">
+            <div class="news">
+                <h2>About Our Town</h2>
+                <p>Our town might be small, but we are mighty together!</p>
+                <p>Population: 705</p>
+                <p>Households: 295</p>
+                <p>Families: 179</p>
+                <p>Median Age: 40.4</p>
+            </div>
+        </div>
+        <div class="main-grid">
+            <div class="news">
+                <p>Number of days since last visit: <span id="visits"></span> days</p>
+            </div>
+        </div>
     </main>
     <footer>
         <img src="./images/LOGO.webp" class="logosmall" alt="logo">
@@ -48,5 +94,8 @@
         <p>&copy2022 Concrete Chamber | Rachel Magelsen | WDD 230 Project</p>
         <div id="lastModified"></div>
     </footer>
+    <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/windchill.js"></script>
+    <script src="./scripts/visits.js"></script>
 </body>
 </html>

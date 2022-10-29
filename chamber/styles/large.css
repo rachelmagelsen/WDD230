@@ -146,6 +146,12 @@
 		height: auto;
 		align-items: center;
 	}
+	.pgtitle {
+		padding-left: 100px;
+	}
+	.gallery img:hover {
+		transform: scale(1.5);
+	}
 	footer {
 		font-family: 'Josefin Sans', sans-serif;
 		background-color: #244266;
