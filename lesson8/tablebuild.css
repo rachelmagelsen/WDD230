@@ -1,0 +1,27 @@
+table, td, th {
+    border: 1px solid;
+}
+table {
+  width: 50%;
+  border-collapse: collapse;
+  box-shadow: 0px 10px 20px #b7b7b7;
+}
+th, td {
+  padding: 8px;
+}
+caption {
+  text-align: center;
+  caption-side: bottom;
+  padding: 8px;
+}
+#title {
+  background-color: #1e93a5;
+  color: white;
+  border: 0px solid;
+}
+#heading {
+  background-color: #7bdae9;
+}
+tr:nth-child(odd) {
+  background-color: #ecfbf7;
+}
