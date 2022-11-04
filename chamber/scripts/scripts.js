@@ -63,3 +63,10 @@ if ("IntersectionObserver" in window) {
     loadImages(img);
   });
 }; 
+
+
+const joinDate = document.querySelector(".joinDate");
+
+datefield.innerHTML = `${fulldate}`;
+
+joinDate.innerHTML = `${now}`;

@@ -104,4 +104,21 @@
         height: auto;
         margin-bottom: 10px;
     }
+    .memberships-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .memberships {
+        display: block;
+        grid-column: 1/2;
+        margin-left: 8rem;
+        margin-top: 2rem;
+        background-color: #ddf1ff;
+        border-radius: 10px;
+        padding: 25px;
+        max-height: 700px;
+    }
+    form {
+        grid-column: 2/3;
+    }
 }

@@ -223,3 +223,6 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: #53ad7e solid 6px;
 }
+.memberships {
+    display: none;
+}

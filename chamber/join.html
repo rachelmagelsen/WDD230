@@ -39,30 +39,70 @@
     </header>
     <main>
         <h1 class="pgtitle">Join the Concrete Chamber of Commerce</h1>
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <legend>Applicant Information</legend>
-                <label class="top">First Name*<input type="text" name="fname" required></label>
-                <label class="top">Last Name*<input type="text" name="lname" required></label>
-                <label class="top">Business Position<input type="text" name="title" ></label>
-                <label class="top">Email*<input type="email" name="email" placeholder="name@email.com" required></label>
-                <label class="top">Phone*<input type="tel" name="phone"  required></label>
-                <label class="top">Business Name*<input type="text" name="title" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Select a Membership Level</legend>
-                <label class="sbs"><input type="radio" name="membership">NP Membership</label>
-                <label class="sbs"><input type="radio" name="membership">Bronze Membership</label>
-                <label class="sbs"><input type="radio" name="membership">Silver Membership</label>
-                <label class="sbs"><input type="radio" name="membership">Gold Membership</label>
-            </fieldset>
-            <fieldset>
-                <legend>Please describe your business</legend>
-                <label><input type="textarea" name="description"></label>
-            </fieldset>
-            <input type="submit" name="Submit" class="submitBtn">
-        </form>
-    </main>
+        <div class="memberships-grid"> 
+            <div class="memberships">
+                <h2>Membership Levels</h2>
+                <div>
+                    <h3>NP (Non-Profit) Membership: No Fee</h3>
+                    <ul>
+                        <li>Chamber Business Directory (one mailing list request/year)</li>
+                        <li>Invitation to participate in Chamber committees or task forces</li>
+                        <li>Member spotlight (featured on social media platforms)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Bronze Membership: $700</h3>
+                    <ul>
+                        <li>Everything in NP Membership</li>
+                        <li>Anniversary/Grand Opening/Ribbon Cutting (one request)</li>
+                        <li>Four registrations to each Business After Hours event</li>
+                        <li>Annual consultation with a Business Development team member</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Silver Membership: $1,100</h3>
+                    <ul>
+                        <li>Everything in NP and Bronze memberships</li>
+                        <li>Anniversary/Grand Opening/Ribbon Cutting (two requests)</li>
+                        <li>Two registrations to Annual Legislative Reception</li>
+                        <li>Company advertisement on Chamber website</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Gold Membership: $1,500</h3>
+                    <ul>
+                        <li>Everything in NP, Bronze, and Silver memberships</li>
+                        <li>Priority invitation to register for Annual Washington, D.C. Trip</li>
+                        <li>Two registrations to each Policy Forum</li>
+                        <li>Access to Town Hall Conference Call during legislative session</li>
+                    </ul>
+                </div>
+            </div>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                        <label class="top">First Name*<input type="text" name="fname" required></label>
+                        <label class="top">Last Name*<input type="text" name="lname" required></label>
+                        <label class="top">Business Position<input type="text" name="title" ></label>
+                        <label class="top">Email*<input type="email" name="email" placeholder="name@email.com" required></label>
+                        <label class="top">Phone*<input type="tel" name="phone"  required></label>
+                        <label class="top">Business Name*<input type="text" name="title" required></label>
+                        <input type="hidden" name="date" class="joinDate">
+                </fieldset>
+                <fieldset>
+                    <legend>Select a Membership Level</legend>
+                        <label class="sbs"><input type="radio" name="membership">NP Membership</label>
+                        <label class="sbs"><input type="radio" name="membership">Bronze Membership</label>
+                        <label class="sbs"><input type="radio" name="membership">Silver Membership</label>
+                        <label class="sbs"><input type="radio" name="membership">Gold Membership</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Please describe your business</legend>
+                    <label><input type="textarea" name="description"></label>
+                </fieldset>
+                <input type="submit" name="Submit" class="submitBtn">
+            </form>
+        </div> 
     </main>
     <footer>
         <img src="./images/LOGO.webp" class="logosmall" alt="logo">
