@@ -12,7 +12,7 @@ body {
 h1, h2, h3, form legend {
     font-family: "Josefin Sans", sans-serif;
 }
-p {
+p, label {
     font-family: Arial;
 }
 header {
@@ -132,7 +132,7 @@ main img {
     height: auto;
     align-items: center;
 }
-.join button {
+.join button, .submitBtn {
     background-color:#102812;
     color: white;
     text-decoration: none;
@@ -140,8 +140,13 @@ main img {
     padding: 1rem;
     font-size: 1rem;
 }
-.join button:hover {
+.join button:hover, .submitBtn:hover {
     background-color: #53ad7e;
+}
+.submitBtn {
+    display: block;
+    margin-left: 1rem;
+    margin-bottom: 20px;
 }
 .pgtitle {
     padding-left: 20px;
@@ -188,7 +193,7 @@ footer a {
 }
 
 form fieldset {
-    margin: 2rem 10rem;
+    margin: 2rem 1rem;
     border: 1px solid;
     border-radius: 10px;
     padding: 1rem 2%;
@@ -202,7 +207,19 @@ form label.top input {
     display: block;
     padding: .75rem;
     border-radius: 5px;
+    color: #555;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #BCE3ff;
 }
-.sbs {
-
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+}
+form label.top input:required {
+    border-left: #244266 solid 6px;
+}
+form label.top input:required:valid {
+    border-left: #53ad7e solid 6px;
 }
