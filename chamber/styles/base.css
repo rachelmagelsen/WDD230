@@ -9,7 +9,7 @@ body {
     padding: 1rem;
     border-radius: 5px;
 }
-h1, h2, h3 {
+h1, h2, h3, form legend {
     font-family: "Josefin Sans", sans-serif;
 }
 p {
@@ -185,4 +185,24 @@ footer a {
     width: 40px;
     height: auto;
     margin-bottom: 10px;
+}
+
+form fieldset {
+    margin: 2rem 10rem;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 1rem 2%;
+}
+form label.top {
+    display: block;
+    padding-top: 1 rem;
+    font-size: .8rem;
+}
+form label.top input {
+    display: block;
+    padding: .75rem;
+    border-radius: 5px;
+}
+.sbs {
+
 }
