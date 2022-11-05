@@ -142,9 +142,9 @@
 		background-color: #53ad7e;
 	}
 	.submitBtn {
-		display: block;
-		margin-left: 10rem;
-		margin-bottom: 50px;
+		grid-column: 2/3;
+		grid-row: 3/4;
+		margin-top: 100px;
 	}
 	.side-img {
 		max-width: 15rem;
