@@ -1,7 +1,71 @@
 {
     "businesses": [
       {
-        "name": "Red's Books",
+        "name": "Red Barn Books",
+        "address": "23 December 1805",
+        "phone": "27 June 1844",
+        "website": "",
+        "order": 1,
+        "logo": "./images/businesses/bookstore.png"
+      },
+      {
+        "name": "The Clean Cut",
+        "address": "23 December 1805",
+        "phone": "27 June 1844",
+        "website": "",
+        "order": 1,
+        "logo": "./images/businesses/bookstore.png"
+      },
+      {
+        "name": "Lionheart Fitness",
+        "address": "23 December 1805",
+        "phone": "27 June 1844",
+        "website": "",
+        "order": 1,
+        "logo": "./images/businesses/bookstore.png"
+      },
+      {
+        "name": "Amber Waves Bakery",
+        "address": "23 December 1805",
+        "phone": "27 June 1844",
+        "website": "",
+        "order": 1,
+        "logo": "./images/businesses/bookstore.png"
+      },
+      {
+        "name": "QuikFix Mechanics",
+        "address": "23 December 1805",
+        "phone": "27 June 1844",
+        "website": "",
+        "order": 1,
+        "logo": "./images/businesses/bookstore.png"
+      },
+      {
+        "name": "Aspera Pharmacy",
+        "address": "23 December 1805",
+        "phone": "27 June 1844",
+        "website": "",
+        "order": 1,
+        "logo": "./images/businesses/bookstore.png"
+      },
+      {
+        "name": "Concrete Primary Care",
+        "address": "23 December 1805",
+        "phone": "27 June 1844",
+        "website": "",
+        "order": 1,
+        "logo": "./images/businesses/bookstore.png"
+      },
+      {
+        "name": "Johnny's Place",
+        "address": "23 December 1805",
+        "phone": "27 June 1844",
+        "website": "",
+        "order": 1,
+        "logo": "./images/businesses/bookstore.png"
+      },
+      {
+        "name": "Sapphire Florist",
         "address": "23 December 1805",
         "phone": "27 June 1844",
         "website": "",
