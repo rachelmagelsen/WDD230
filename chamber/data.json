@@ -2,75 +2,66 @@
     "businesses": [
       {
         "name": "Red Barn Books",
-        "address": "23 December 1805",
-        "phone": "27 June 1844",
-        "website": "",
-        "order": 1,
+        "address": "45821 Railroad Ave, Concrete, WA 98237",
+        "phone": "(360)853-8341",
+        "website": "redbarnbook.com",
         "logo": "./images/businesses/bookstore.png"
       },
       {
         "name": "The Clean Cut",
-        "address": "23 December 1805",
-        "phone": "27 June 1844",
-        "website": "",
-        "order": 1,
-        "logo": "./images/businesses/bookstore.png"
+        "address": "7830 S Superior Ave, Concrete, WA 98237",
+        "phone": "(360)853-8341",
+        "website": "cleancutbarbershop.com",
+        "logo": "./images/businesses/barber.png"
       },
       {
         "name": "Lionheart Fitness",
-        "address": "23 December 1805",
-        "phone": "27 June 1844",
-        "website": "",
-        "order": 1,
-        "logo": "./images/businesses/bookstore.png"
+        "address": "46110 E Main St, Concrete, WA 98237",
+        "phone": "(360)853-8341",
+        "website": "lionheartfitness.com",
+        "logo": "./images/businesses/gym.png"
       },
       {
         "name": "Amber Waves Bakery",
-        "address": "23 December 1805",
-        "phone": "27 June 1844",
-        "website": "",
-        "order": 1,
-        "logo": "./images/businesses/bookstore.png"
+        "address": "45597 Main St, Concrete, WA 98237",
+        "phone": "(360)853-8341",
+        "website": "amberwavesofgrain.com",
+        "logo": "./images/businesses/bakery.png"
       },
       {
         "name": "QuikFix Mechanics",
-        "address": "23 December 1805",
-        "phone": "27 June 1844",
-        "website": "",
-        "order": 1,
-        "logo": "./images/businesses/bookstore.png"
+        "address": "7380 Thompson St, Concrete, WA 98237",
+        "phone": "(360)853-8341",
+        "website": "quikfixauto.com",
+        "logo": "./images/businesses/mechanics.png"
       },
       {
         "name": "Aspera Pharmacy",
-        "address": "23 December 1805",
-        "phone": "27 June 1844",
-        "website": "",
-        "order": 1,
-        "logo": "./images/businesses/bookstore.png"
+        "address": "6754 Baker River Rd, Concrete, WA 98237",
+        "phone": "(360)853-8341",
+        "website": "asperapharmacy.com",
+        "logo": "./images/businesses/pharmacy.png"
       },
       {
         "name": "Concrete Primary Care",
-        "address": "23 December 1805",
-        "phone": "27 June 1844",
-        "website": "",
-        "order": 1,
-        "logo": "./images/businesses/bookstore.png"
+        "address": "7438 S D Ave, Concrete, WA 98237",
+        "phone": "(360)853-8341",
+        "website": "concreteprimarycare.com",
+        "logo": "./images/businesses/care.png"
       },
       {
         "name": "Johnny's Place",
-        "address": "23 December 1805",
-        "phone": "27 June 1844",
-        "website": "",
-        "order": 1,
-        "logo": "./images/businesses/bookstore.png"
+        "address": "45292 State Rte 20, Concrete, WA 98237",
+        "phone": "(360)853-8341",
+        "website": "johnnysplacediner.com",
+        "logo": "./images/businesses/diner.png"
       },
       {
         "name": "Sapphire Florist",
-        "address": "23 December 1805",
-        "phone": "27 June 1844",
-        "website": "",
-        "order": 1,
-        "logo": "./images/businesses/bookstore.png"
+        "address": "45080 Fir St, Concrete, WA 98237",
+        "phone": "(360)853-8341",
+        "website": "sapphireflowers.com",
+        "logo": "./images/businesses/florist.png"
       }
     ]
   }
