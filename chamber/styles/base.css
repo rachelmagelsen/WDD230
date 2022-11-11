@@ -226,3 +226,101 @@ form label.top input:required:valid {
 .memberships {
     display: none;
 }
+
+.maincards {
+    margin-left: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+section {
+  margin: 0.5rem;
+  padding: 0.35rem;
+  background-color: #BCE3ff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards img {
+    width: auto;
+    max-width: 325px;
+    height: 200px;
+    padding-top: 25px;
+}
+.cards p {
+    margin: 10px;
+}
+.cards li > img {
+  width: auto;
+  height: 30px;
+}
+.menu {
+	margin: 1rem;
+    border-radius: 15px;
+	padding: 1rem;
+	background-color: #244266;
+	text-align: center;
+}
+.menu button {
+	padding: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #BCE3ff;
+    border: none;
+    border-radius: 8px;
+}
+.menu button:hover {
+    background-color: #53ad7e;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+}
+.list section {
+	display: flex;
+	align-items: center;
+}
+.grid section {
+	flex-direction: column;
+	text-align: center;
+}
+.grid section > * {
+	margin: 0.1rem;
+}
+.list section {
+	flex-direction: row;
+	justify-content: left;
+}
+.list section > * {
+	margin: 0 1rem;
+	text-align: left;
+}
+.list section img {
+	display: none; /* smaller viewports only */
+}
+section h3 {
+	font-size: 1.5rem;
+}
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.9rem;
+}
+article img {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
+}
+
+@media (min-width: 700px) {
+	.list section img {
+		display: block;
+	}
+}

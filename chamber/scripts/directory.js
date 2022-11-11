@@ -21,9 +21,9 @@ function displayBusinesses(business) {
   h2.textContent = `${business.name}`;
   address.textContent = `${business.address}`;
   phone.textContent = `${business.phone}`;
-  website.textContent = `${business.webite}`;
+  website.textContent = `${business.website}`;
 
-  logo.setAttribute('src', business.imageurl);
+  logo.setAttribute('src', business.logo);
   logo.setAttribute('alt', `logo`);
   logo.setAttribute('loading', 'lazy');
 
@@ -35,3 +35,15 @@ function displayBusinesses(business) {
 
   document.querySelector('div.cards').appendChild(card);
 }
+
+//For the view changer menu bar
+
+const gridbutton = document.querySelector(".grid");
+const listbutton = document.querySelector(".list");
+const display = document.querySelector("article");
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
