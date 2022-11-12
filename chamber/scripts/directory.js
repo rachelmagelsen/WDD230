@@ -38,12 +38,16 @@ function displayBusinesses(business) {
 
 //For the view changer menu bar
 
-const gridbutton = document.querySelector(".grid");
+const gridbutton = document.querySelector(".cards");
 const listbutton = document.querySelector(".list");
-const display = document.querySelector("article");
+const display = document.querySelector(".cards");
+
+listbutton.addEventListener("click", () => {
+  display.classList.add("list");
+  display.classList.remove("cards");
+});
 
 gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
+  display.classList.add("cards");
+  display.classList.remove("list");
+})
