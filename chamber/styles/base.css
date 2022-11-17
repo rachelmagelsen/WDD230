@@ -227,16 +227,13 @@ form label.top input:required:valid {
     display: none;
 }
 
-.maincards {
-    margin-left: 2rem;
-}
-
-.cards {
+/* directory page */
+.grid .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-section {
+.cards section {
   margin: 0.5rem;
   padding: 0.35rem;
   background-color: #BCE3ff;
@@ -275,11 +272,6 @@ section {
 .menu button:hover {
     background-color: #53ad7e;
 }
-.grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	align-items: center;
-}
 .list {
 	display: flex;
 	flex-direction: column;
@@ -301,7 +293,7 @@ section {
 	text-align: left;
 }
 .list section img {
-	display: none; /* smaller viewports only */
+	display: none;
 }
 section h3 {
 	font-size: 1.5rem;
@@ -312,11 +304,5 @@ section a {
 }
 article img {
 	height: 75px;
-	max-width: 100%; /* Images are jerks - Seattle*/
-}
-
-@media (min-width: 700px) {
-	.list section img {
-		display: block;
-	}
+	max-width: 100%;
 }
