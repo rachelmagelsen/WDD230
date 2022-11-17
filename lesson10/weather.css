@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+h1, h2 {
+    font-family: "Poiret One", sans-serif;
+}
+p, figcaption {
+    font-family: Tahoma, sans-serif;
+}
+.thingy {
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    background-color: aquamarine;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 15px;
+}
+figure {
+    background-color: white;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 15px;
+}
