@@ -17,17 +17,6 @@ async function apiFetch() {
         console.log(error);
     }
   }
-function  displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-  
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
-  
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
-  }
-  apiFetch();
 
 const speed = parseInt(document.getElementById("speed").textContent);
 const temp = parseInt(document.getElementById("temp").textContent);
@@ -43,3 +32,18 @@ if (temp <= 50 && speed > 3.0) {
 } else {
   document.getElementById("windchill").innerHTML = "N/A";
 }
+
+function  displayResults(weatherData) {
+  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+
+  const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+  const desc = weatherData.weather[0].description;
+
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
+  captionDesc.textContent = desc;
+  speed.textContent = weatherData.wind.speed.toFixed(0);
+  windchill.textContent = getWindChill(weatherData.main.temp.toFixed(0), weatherData.wind.speed);
+}
+
+apiFetch();
