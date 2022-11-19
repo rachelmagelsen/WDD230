@@ -12,8 +12,11 @@ body {
 h1, h2, h3, form legend {
     font-family: "Josefin Sans", sans-serif;
 }
-p, label {
+p, label, .weathertype {
     font-family: Arial;
+}
+.weathertype {
+    font-style: italic;
 }
 header {
     display: grid;
@@ -99,7 +102,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 .hero, .event, .news, .theater, .chs, .hike, .join, .weather {
-    padding: 10px;
+    padding: 20px;
     margin: .5rem;
     background-color: #BCE3ff;
     border-radius: 5px;

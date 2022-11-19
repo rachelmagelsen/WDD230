@@ -1,7 +1,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const windspeed = document.querySelector("#wind-speed");
+const windSpeed = document.querySelector("#wind-speed");
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=48.53929668071575&lon=-121.74627202353687&appid=8fb24c7b1154915d2992003034a0fa9a&units=imperial';
 
 async function apiFetch() {
@@ -20,7 +20,7 @@ async function apiFetch() {
 }
 function  displayResults(weatherData) {
   const temp = weatherData.main.temp.toFixed(0)
-  currentTemp.innerHTML = `<strong>${temp}</strong>&deg;F`;
+  currentTemp.innerHTML = `<strong>${temp}&deg;F</strong>`;
 
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
@@ -35,7 +35,7 @@ function  displayResults(weatherData) {
 }
 
 function calc_windChill(temp, speed){
-  if (temp <= 50  && speed >= 3.0) {
+  if (temp <= 50 && speed >= 3.0) {
     const chill = 
         35.74 + 
         0.6215 * temp - 
