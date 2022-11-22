@@ -12,6 +12,9 @@ body {
 h1, h2, h3, form legend {
     font-family: "Josefin Sans", sans-serif;
 }
+legend {
+    margin-top: 30px;
+}
 p, label, .weathertype {
     font-family: Arial;
 }
@@ -24,6 +27,13 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: #102812;
     color: white;
+}
+.meeting {
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    background-color: #53ad7e;
+    border-radius: 15px;
+    margin: 15px;
 }
 .logo {
 	max-width: 60px;
