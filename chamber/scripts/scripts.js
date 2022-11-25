@@ -31,11 +31,15 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('
 const day = new Date().getDay();
 
 if (day == 1 || day == 2) {
-    const banner = document.querySelector(".meeting");
-    let para = document.createElement("p");
-    para.textContent = "Come join us for the Chamber Meet & Greet Wednesday at 7:00 pm!";
-    banner.appendChild(para);
+  const banner = document.querySelector(".meeting");
+  let para = document.createElement("p");
+  para.textContent = "Come join us for the Chamber Meet & Greet Wednesday at 7:00 pm!";
+  banner.appendChild(para);
 }
+  else {
+    const banner = document.querySelector(".meeting");
+    banner.style.display = "none"
+};
 
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 

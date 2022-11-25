@@ -14,10 +14,12 @@ fetch(requestURL)
     .then(function (response) {
       return response.json();
     })
-    const members = jsonObject["members"];
+    .then(function (jsonObject) {
+      const members = jsonObject["businesses"];
       displayMember(members[index1], 'div.theater');
       displayMember(members[index2], 'div.chs');
-      displayMember(members[index3], 'div.hikes');
+      displayMember(members[index3], 'div.hike');
+    });
 
 function displayMember(member, spotlight) {
     let card = document.createElement('section');
@@ -32,7 +34,7 @@ function displayMember(member, spotlight) {
     phone.textContent = `${member.phone}`;
     website.textContent = `${member.website}`;
 
-    logo.setAttribute('src', business.logo);
+    logo.setAttribute('src', member.logo);
     logo.setAttribute('alt', `logo`);
     logo.setAttribute('loading', 'lazy');  
 

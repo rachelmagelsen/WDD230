@@ -29,6 +29,7 @@ header {
     color: white;
 }
 .meeting {
+    display: block;
     font-family: Arial, sans-serif;
     padding: 15px;
     background-color: #53ad7e;
@@ -185,6 +186,9 @@ main img {
 }
 .gallery img:hover {
     transform: scale(1.1);
+}
+.theater img, .chs img, .hike img {
+    max-width: 100px;
 }
 footer {
     font-family: 'Josefin Sans', sans-serif;
