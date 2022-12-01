@@ -21,7 +21,7 @@ try {
 }
 
 const hambutton = document.querySelector('.btn');
-const mainnav = document.querySelector('.navigation')
+const mainnav = document.querySelector('.navigation');
 
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 

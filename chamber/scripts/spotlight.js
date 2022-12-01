@@ -8,7 +8,7 @@ const index3 = randomIntFromInterval(7, 9).toFixed(0);
 
 function randomIntFromInterval(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
-  }
+  };
 
 fetch(requestURL) 
     .then(function (response) {
