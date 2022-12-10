@@ -2,7 +2,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const currentHumidity = document.querySelector('#humidity');
-var forecastEl = document.querySelector("#forecast");
+const days = document.querySelector("#forecast");
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=33.1581&lon=-117.3506&appid=8fb24c7b1154915d2992003034a0fa9a&units=imperial';
 
 async function apiFetch() {
@@ -11,33 +11,15 @@ async function apiFetch() {
     if (response.ok) {
       const data = await response.json();
       displayResults(data);
+      const forecast = data.list.filter((day) => {
+        return day.dt_txt.endswith("15:00:00")});
+        forecast.forEach(displayForecast)
     } else {
         throw Error(await response.text());
     }
   } catch (error) {
       console.log(error);
 }
-
-forecastEl[0].classList.add('loaded');
-
-		response.json().then(function (data) {
-			var fday = "";
-			data.daily.forEach((value, index) => {
-				if (index > 0) {
-					var dayname = new Date(value.dt * 1000).toLocaleDateString("en", {
-						weekday: "long",
-					});
-					var icon = value.weather[0].icon;
-					var temp = value.temp.day.toFixed(0);
-					fday = `<div class="forecast-day">
-						<p>${dayname}</p>
-						<p><span class="ico-${icon}" title="${icon}"></span></p>
-						<div class="forecast-day--temp">${temp}<sup>°C</sup></div>
-					</div>`;
-					forecastEl[0].insertAdjacentHTML('beforeend', fday);
-				}
-			});
-		});
 
 
 }
