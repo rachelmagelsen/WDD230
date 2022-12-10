@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap');
+body {
+	padding: 0;
+	margin: 0;
+}
 h1, h2, form legend {
     font-family: "Flamenco", sans-serif;
     font-weight: 400;
@@ -10,21 +14,100 @@ h3, h4 {
 p, a {
     font-family: Arial, Helvetica, sans-serif;
 }
-.sns img {
-    max-width: 40px;
+
+/* nav and hero */
+nav {
+    position: fixed;
+    top: 0;
+    background-color: #2e294e;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+.navigation {
+    margin: 0 auto;
+	display: block;
+    font-family: Arial;
+    color: white;
+    justify-content: right;
+}
+nav button {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.responsive li {
+	display: block;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem;
+    text-decoration: none;
+    color: #c5d86d;
+    text-align: center;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.active {
+    font-weight: bold;
 }
 .heroimg {
+    margin: 0 auto;
     display: block;
     position: relative;
     max-width: 100%;
     height: auto;
-    z-index: -1;
+    z-index: -2;
 }
-.hero {
-    display: block;
+.hero h1, .hero button{
+    position: absolute;
 }
-nav {
-    background-image: linear-gradient( rgb(255, 255, 255), rgba(255,0,0,0));
-    max-width: 100%;
-    height: auto;
+.hero h1 {
+    color: white;
+    text-shadow: 2px 2px 15px #000000;
+    font-size: 3rem;
+    margin-top: 80px;
+    margin-left: 70px;
+}
+.hero button {
+    background-color: #f46036;
+    color: white;
+    border: white;
+    padding: 15px;
+    margin-top: 150px;
+    margin-left: 180px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 15px #f46036;
+}
+.hero button:hover {
+    background-color: white;
+    color: #f46036;
+    text-decoration: underline;
+}
+
+/* main */
+main {
+    padding: 50px;
+}
+
+/* weather */
+
+
+/* footer */
+footer {
+    background-color: #c5d86d;
+    padding: 30px;
+}
+.sns img {
+    max-width: 40px;
+    max-height: 40px;
+    justify-content: right;
 }

@@ -1,0 +1,32 @@
+@media only screen and (min-width: 60rem) {
+    nav {
+        height: 80px;
+    }
+    .navigation {
+		display: flex;
+        padding: 25px;
+        font-size: 20px;
+	}
+	.navigation li {
+		display: block;
+	}
+	nav button {
+		display: none;
+	}
+    .hero h1 {
+        margin-left: 70px;
+        margin-top: 200px;
+        font-size: 8rem;
+    }
+    .hero button {
+        background-color: #f46036;
+        color: white;
+        border: white;
+        padding: 30px;
+        margin-top: 400px;
+        margin-left: 650px;
+        border-radius: 45px;
+        justify-items: center;
+        font-size: 1.3rem;
+    }
+}

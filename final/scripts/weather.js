@@ -1,8 +1,9 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const windSpeed = document.querySelector("#wind-speed");
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=48.53929668071575&lon=-121.74627202353687&appid=8fb24c7b1154915d2992003034a0fa9a&units=imperial';
+const currentHumidity = document.querySelector('#humidity');
+var forecastEl = document.querySelector("#forecast");
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=33.1581&lon=-117.3506&appid=8fb24c7b1154915d2992003034a0fa9a&units=imperial';
 
 async function apiFetch() {
   try {
@@ -17,6 +18,28 @@ async function apiFetch() {
       console.log(error);
 }
 
+forecastEl[0].classList.add('loaded');
+
+		response.json().then(function (data) {
+			var fday = "";
+			data.daily.forEach((value, index) => {
+				if (index > 0) {
+					var dayname = new Date(value.dt * 1000).toLocaleDateString("en", {
+						weekday: "long",
+					});
+					var icon = value.weather[0].icon;
+					var temp = value.temp.day.toFixed(0);
+					fday = `<div class="forecast-day">
+						<p>${dayname}</p>
+						<p><span class="ico-${icon}" title="${icon}"></span></p>
+						<div class="forecast-day--temp">${temp}<sup>°C</sup></div>
+					</div>`;
+					forecastEl[0].insertAdjacentHTML('beforeend', fday);
+				}
+			});
+		});
+
+
 }
 function  displayResults(weatherData) {
   const temp = weatherData.main.temp.toFixed(0)
@@ -25,27 +48,14 @@ function  displayResults(weatherData) {
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
 
+  const humidity = weatherData.main.humidity.toFixed(0)
+  currentHumidity.innerHTML = `<strong>${humidity}%</strong>`;
+
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
   captionDesc.textContent = desc;
 
-  const speed = weatherData.wind.speed.toFixed(0)
-  windSpeed.innerHTML = `${speed} mph`;
-  calc_windChill(temp, speed);
 }
 
-function calc_windChill(temp, speed){
-  if (temp <= 50 && speed >= 3.0) {
-    const chill = 
-        35.74 + 
-        0.6215 * temp - 
-        35.75 * speed ** 0.16 +
-        0.4275 * temp * speed ** 0.16;
-    document.getElementById("wind-chill").textContent = Math.round(chill);
-  }
-  else {
-      document.getElementById("wind-chill").textContent = "N/A";
-  }
-}
 
 apiFetch();

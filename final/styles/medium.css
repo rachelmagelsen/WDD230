@@ -1,0 +1,23 @@
+@media only screen and (min-width: 45rem) {
+    .navigation {
+		display: flex;
+        text-align: left;
+	}
+	.navigation li {
+		display: block;
+	}
+	nav button {
+		display: none;
+	}
+    .hero h1 {
+        font-size: 5rem;
+    }
+    .hero button {
+        margin-top: 200px;
+    }
+
+    footer {
+        background-color: #c5d86d;
+        padding: 50px;
+    }
+}
