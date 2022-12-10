@@ -290,7 +290,7 @@ form label.top input:required:valid {
 .menu button:hover {
     background-color: #53ad7e;
 }
-.list {
+.list .cards {
 	display: flex;
 	flex-direction: column;
 }
@@ -310,7 +310,7 @@ form label.top input:required:valid {
 	margin: 0 1rem;
 	text-align: left;
 }
-.list section img {
+.list img {
 	display: none;
 }
 section h3 {
