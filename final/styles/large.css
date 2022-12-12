@@ -13,20 +13,30 @@
 	nav button {
 		display: none;
 	}
+
+    main {
+        padding: 100px 250px;
+    }
+
     .hero h1 {
         margin-left: 70px;
         margin-top: 200px;
         font-size: 8rem;
     }
     .hero button {
-        background-color: #f46036;
-        color: white;
-        border: white;
         padding: 30px;
         margin-top: 400px;
         margin-left: 650px;
         border-radius: 45px;
         justify-items: center;
         font-size: 1.3rem;
+    }
+
+    .weathergrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .weather {
+        grid-column: 1/2;
     }
 }
