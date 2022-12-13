@@ -30,6 +30,15 @@ nav {
     height: auto;
     z-index: 1;
 }
+nav h1 a {
+    font-family: "Flamenco", sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 20px;
+    position: fixed;
+    color: white;
+    text-decoration: none;
+}
 .navigation {
     margin: 0 auto;
 	display: block;
@@ -53,8 +62,9 @@ nav button {
 	display: block;
 }
 nav ul li a {
+    margin: 0 auto;
     display: block;
-    padding: .8rem;
+    padding-right: 2rem;
     text-decoration: none;
     color: #c5d86d;
     text-align: center;
@@ -117,7 +127,37 @@ main {
 
 /* form */
 form {
-    padding-top: 100px;
+    padding-top: 50px;
+}
+legend {
+    font-size: 130%;
+    padding: 15px;
+}
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+form label.top {
+    display: block;
+}
+form label.top input {
+    display: block;
+    padding: .75rem;
+    border-radius: 5px;
+    color: #1b998b;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #eaf8b0;
+}
+form label.sbs {
+    display: block;
+    padding: 20px;
+}
+form label.top input:required {
+    border-left: #d7263e solid 6px;
+}
+form label.top input:required:valid {
+    border-left: #1b998b solid 6px;
 }
 
 /* footer */

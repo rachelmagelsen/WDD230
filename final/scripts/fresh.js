@@ -1,19 +1,22 @@
 const requestURL = 'https://rachelmagelsen.github.io/WDD230/final/fruit.json';
-const fruits = document.querySelector('.fruits');
+const fruit1 = document.querySelector('#fruit1');
+const fruit2 = document.querySelector('#fruit2');
+const fruit3 = document.querySelector('#fruit3');
 
 fetch(requestURL) 
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
-    const fruitName = jsonObject["name"];
-    fruitName.forEach(displayFruit);
+    addFruit(jsonObject, "#fruit1")
+    addFruit(jsonObject, "#fruit2")
+    addFruit(jsonObject, "#fruit3")
   });
 
-function displayFruit(fruit) {
+function addFruit(fruit) {
     let name = document.createElement('section');
-    let h2 = document.createElement('h2');
-    let logo = document.createElement('img');
+
+    h2.textContent = `${fruit.name}`;
 
     document.querySelector('div.cards').appendChild(card);
 

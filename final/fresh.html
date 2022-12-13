@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fresh</title>
+    <link rel="icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
@@ -12,15 +13,20 @@
 <body>
     <header>
         <nav class="nav">
+            <h1><a href="./index.html">Bountiful Foods</a></h1>
             <ul class="navigation">
                 <button class="btn">&#9776</button>
-                <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="./fresh.html">Fresh</a></li>
+                <li class="active"><a href="./fresh.html">Fresh</a></li>
                 <li><a href="./contact.html">About Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <h2>Mix It Up!</h2>
+        <p>Use this page to build your own fruit drink. Place an order by selecting three fruits below, and then
+            you'll be able to see nutrition information for your drink. One of our associates will gladly mix it 
+            up for you and will be ready for you to pick up. Cheers!
+        </p>
         <form>
             <fieldset>
                 <legend>Build Your Own Fruit Drink</legend>
@@ -30,7 +36,15 @@
             </fieldset>
             <fieldset>
                 <legend>Choose three fruits</legend>
-                    <label class="fruits"><input type="radio" name="fruits"></label>
+                    <label class="top">Pick your main fruit
+                        <select id="fruit1" name="fruit1"></select>
+                    </label>
+                    <label class="top">Pick another fruit
+                        <select id="fruit2" name="fruit2"></select>
+                    </label>
+                    <label class="top">Pick a final fruit
+                        <select id="fruit3" name="fruit3"></select>
+                    </label>
             </fieldset>
             <fieldset>
                 <legend>Special instructions:</legend>
@@ -46,6 +60,10 @@
         <a class="sns" href="facebook.com"><img src="./images/facebook.png" alt="facebook"></a>
         <a class="sns" href="linkedin.com"><img src="./images/linkedin.png" alt="linkedin"></a>
         <a class="sns" href="instagram.com"><img src="./images/insta.png" alt="instagram"></a>
+        <p>&copy2022 Bountiful Foods | Rachel Magelsen | WDD 230 Project</p>
+        <div id="lastModified"></div>
      </footer>
+     <script src="./scripts/scripts.js"></script>
+     <script src="./scripts/fresh.js"></script>
 </body>
 </html>
