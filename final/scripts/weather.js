@@ -11,7 +11,6 @@ async function apiFetch() {
     if (response.ok) {
       const data = await response.json();
       displayResults(data);
-
     }
     else {
         throw Error(await response.text());
@@ -38,12 +37,26 @@ function  displayResults(weatherData) {
 
 }
 
-function displayForecast (dayData) {
-  let forecast = dayData.list.filter(forecast => forecast.dt_txt.includes('15:00:00'));
-  forecast.slice(0,3).forEach(forecast_day)
 
-  
-}
+const forecast = data.list.filter((day) => {
+  return day.dt_txt.endsWith("15:00:00")});
+  forecast.forEach(displayForecast);
+
+
+function displayForecast(day) {
+  dayDate = document.createElement ("p");
+  dayTemp = document.createElement ("p");
+  dayIcon = document.createElement ("img");
+
+  const iconsrc = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
+  const type = day.weather[0].description;
+
+  dayDate.innerHTML = `${day.dt_txt}`;
+  dayTemp.innerHTML = `${day.main.temp.toFixed(0)}&deg;F`;
+  dayIcon.setAttribute('src', iconsrc);
+  dayType.setAttribute('alt', type);
+
+  }
 
 
 apiFetch();
