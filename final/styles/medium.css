@@ -9,6 +9,15 @@
 	nav button {
 		display: none;
 	}
+    nav h1 a {
+        font-family: "Flamenco", sans-serif;
+        font-weight: 400;
+        margin: 0;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+    }
+
     .hero h1 {
         font-size: 5rem;
     }

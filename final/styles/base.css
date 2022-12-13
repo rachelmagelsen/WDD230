@@ -34,7 +34,8 @@ nav h1 a {
     font-family: "Flamenco", sans-serif;
     font-weight: 400;
     margin: 0 auto;
-    padding: 20px;
+    margin-left: 150px;
+    text-align: center;
     position: fixed;
     color: white;
     text-decoration: none;
@@ -113,6 +114,9 @@ nav ul li a:hover {
 main {
     padding: 50px;
 }
+.aboutimg {
+    border-radius: 30px;
+}
 
 /* weather */
 .weather {
@@ -158,6 +162,17 @@ form label.top input:required {
 }
 form label.top input:required:valid {
     border-left: #1b998b solid 6px;
+}
+.submitBtn {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d7263d;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+.submitBtn:hover {
+    background-color: #1b998b;
 }
 
 /* footer */
