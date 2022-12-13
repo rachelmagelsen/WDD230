@@ -2,7 +2,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('#weathertype');
 const currentHumidity = document.querySelector('#humidity');
-const dayForecast = document.querySelector('#forecast');
+// const dayForecast = document.querySelector('#forecast');
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=33.1581&lon=-117.3506&appid=8fb24c7b1154915d2992003034a0fa9a&units=imperial';
 
 async function apiFetch() {
@@ -38,25 +38,25 @@ function  displayResults(weatherData) {
 }
 
 
-const forecast = data.list.filter((day) => {
-  return day.dt_txt.endsWith("15:00:00")});
-  forecast.forEach(displayForecast);
+// const forecast = data.list.filter((day) => {
+//   return day.dt_txt.endsWith("15:00:00")});
+//   forecast.forEach(displayForecast);
 
 
-function displayForecast(day) {
-  dayDate = document.createElement ("p");
-  dayTemp = document.createElement ("p");
-  dayIcon = document.createElement ("img");
+// function displayForecast(day) {
+//   dayDate = document.createElement ("p");
+//   dayTemp = document.createElement ("p");
+//   dayIcon = document.createElement ("img");
 
-  const iconsrc = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
-  const type = day.weather[0].description;
+//   const iconsrc = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
+//   const type = day.weather[0].description;
 
-  dayDate.innerHTML = `${day.dt_txt}`;
-  dayTemp.innerHTML = `${day.main.temp.toFixed(0)}&deg;F`;
-  dayIcon.setAttribute('src', iconsrc);
-  dayType.setAttribute('alt', type);
+//   dayDate.innerHTML = `${day.dt_txt}`;
+//   dayTemp.innerHTML = `${day.main.temp.toFixed(0)}&deg;F`;
+//   dayIcon.setAttribute('src', iconsrc);
+//   dayType.setAttribute('alt', type);
 
-  }
+//   }
 
 
 apiFetch();
