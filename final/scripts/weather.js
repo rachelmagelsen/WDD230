@@ -2,7 +2,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('#weathertype');
 const currentHumidity = document.querySelector('#humidity');
-// const dayForecast = document.querySelector('#forecast');
+const dayForecast = document.querySelector('#forecast');
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=33.1581&lon=-117.3506&appid=8fb24c7b1154915d2992003034a0fa9a&units=imperial';
 
 async function apiFetch() {
